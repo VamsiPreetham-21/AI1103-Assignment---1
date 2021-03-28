@@ -1,0 +1,149 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+
+\usepackage{setspace}
+\usepackage{gensymb}
+\singlespacing
+\usepackage[cmex10]{amsmath}
+
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{bm}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{subfig}
+
+\usepackage{longtable}
+\usepackage{multirow}
+
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{steinmetz}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{verbatim}
+\usepackage{tfrupee}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{graphicx}
+\usepackage{tkz-euclide}
+
+\usetikzlibrary{calc,math}
+\usepackage{listings}
+    \usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}                                           %%
+    \usepackage{lscape}     
+\usepackage{multicol}
+\usepackage{chngcntr}
+
+\DeclareMathOperator*{\Res}{Res}
+
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+
+\hyphenation{op-tical net-works semi-conduc-tor}
+\def\inputGnumericTable{}                                 %%
+
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+
+
+
+\title{AI1103 - Assignment - 1}
+\author{Name : Vamsi Preetham Jumala \\Roll No : CS20BTECH11058}
+
+
+\begin{document}
+
+\maketitle
+
+
+Download all python codes from\\
+
+
+\begin{lstlisting}
+
+https://github.com/VamsiPreetham-21/AI1103-Assignment---1/blog/main/Assignment1.py
+
+\end{lstlisting}
+
+
+Download all latex codes from\\
+
+
+
+\begin{lstlisting}
+
+https://github.com/VamsiPreetham-21/AI1103-Assignment---1/blog/main/Assignment1.tex
+\end{lstlisting}
+
+
+
+Question - 5.5\\
+
+
+If each element of a second order determinant is either zero or one , what is the probability that the value of the determinant is positive ? (Assume that the individual entries are chosen independently each value being assumed with probability 1/2 )\\
+
+
+Solution :\\
+
+Total number of entries in the matrix are 4.\\
+Let X = {0,1} be a random variable denoting the possible value for each entry.\\
+\begin{equation}
+\label{eq1}
+\begin{split}
+\Pr(X=0) & = \frac{1}{2}
+\end{split}
+\end{equation}
+
+\begin{equation}
+\label{eq2}
+\begin{split}
+\Pr(X=1) & = \frac{1}{2}
+\end{split}
+\end{equation}
+
+
+For the determinant of the matrix to be positive first and fourth entries should be 1 and at least one among the other two should be zero
+
+\begin{equation}
+\begin{split}
+&=\Pr(X=1)\Pr(X=1)(1-(\Pr(X=1)\Pr(X=1)))\\
+&=\frac{1}{4}(1-\frac{1}{4})\\
+&=\frac{3}{16}
+\end{split}
+\end{equation}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
